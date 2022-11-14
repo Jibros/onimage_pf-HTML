@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/front/css/reset.css">
+<link rel="stylesheet" href="../assets/front/css/layout.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'en';
+    const _CDN = '.';
+</script>
+<script src="../assets/front/js/common.js"></script>
+<script src="../assets/front/smart/js/smart.js"></script>
+
+<link rel="stylesheet" href="../assets/front/smart/css/smart.css">
+<script src="../assets/front/smart/js/libs/swipe.js"></script>
+<!-- <script src="../assets/front/smart/js/libs/scrollTo.min.js"></script> -->
+<script src="../assets/front/smart/js/libs/TweenMax.min.js"></script>
+
+<!-- 영문 진입시, css 호출 (위치:head 태그 하단 또는 body 끝) -->
+<link rel="stylesheet" href="../assets/front/css/eng.css">
+
+</head>
+<body>
+
+
+<section class="sub-2">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- 로고 -->
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        <!-- //로고 -->
+    </header>
+    <!-- //HEADER -->
+
+	<!-- ASIDE -->
+	<aside id="aside" class="aside">
+        <!-- Sidebar -->
+		<nav class="sidebar">
+            <div class="inner">
+                <a href="/" class="toggle" data-toggle="aside">Main</a>
+
+                <ul class="nav">
+                    <li><a href="/" class="menu menu-1"><span><i></i>Main</span></a></li>
+                    <li><a href="../sub1.html" class="menu menu-2"><span><i></i>Promotion</span></a></li>
+                    <li><a href="../sub2.html" class="menu menu-3"><span><i></i>Youplay</span></a></li>
+                    <li class="on"><a href="../sub3.html" class="menu menu-4"><span><i></i>Smart Exhibition</span></a></li>
+                    <li><a href="../sub4.html" class="menu menu-5"><span><i></i>Web Room</span></a></li>
+                    <li><a href="../sub5.html" class="menu menu-6"><span><i></i>Emiji Room</span></a></li>
+                </ul>
+
+                <div class="language">
+                    <a href="#" class="on">KR</a>
+                    <a href="#">EN</a>
+                </div>
+
+                <div class="footer">
+                    <div class="company">
+                        <p>Korea Disabled Artist Association (CEO Bang Guihee)</p>
+                        <p>www.emiji.net / tel.02)861-8848</p>
+                        <!-- <p>(온이미지는 E美지 www.emiji.net과와 연동됩니다.<br>모든 문의사항 및 의견은 E美지의 연락처로 해주시기 바랍니다)</p> -->
+                    </div>
+
+                    <ul class="sponcer">
+                        <li><img src="../assets/front/images/menu/spon_1.png" alt="문화체육관광부"></li>
+                        <li><img src="../assets/front/images/menu/spon_2.png" alt="한국장애인문화예술원"></li>
+                    </ul>
+
+                    <p class="copy">Copyright C onimage. All Rights Reserved.</p>
+                </div>
+            </div>
+		</nav>
+		<!-- //Sidebar -->
+
+        <div class="dimmed"></div>
+	</aside>
+	<!-- //ASIDE -->
+
+    <!-- 하단 : 오디오 재생 -->
+    <div class="audiobox">
+        <div class="audio_inner">
+            <div class="audio_ico"><img src="../assets/front/images/ico/audio_icon.png" alt="" /></div>
+
+            <div class="audio_play">
+                <p class="tx_msg">This area is a permanent exhibition hall.<br>The fascinating paintings can talk.<br> That’s why it’s barrier-free.</p>
+
+                <!-- /assets/js/scrollFunc.js : param 0~4-->
+                <button type="button" class="btn_play" onclick="audioHandle(this, 'en', 2, 'subpage')">In Sound</button>
+            </div>
+        </div>
+    </div>
+    <!-- //하단 : 오디오 재생 -->
+</section>
+
+
+<div class="wrapper_horizontal" id="contents">
+    <div class="bg">
+        <!------------------------------------------------------------------------------------------------------------------
+            수정 : BG이미지에 타이틀이 들어가 있어서 BG변경해주어야 해요
+         ------------------------------------------------------------------------------------------------------------------>
+        <img src="../assets/front/smart/images/bg_smart_en.png"/>
+
+        <div class="items item1 page1 item-box" data-index="1" itemName="c_01" director="Kang Nae-gyun" alt="Village Society., Korean Painting" style="left:17.69%; top:29.35%; width:6.29%; height:27.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 0, 'picture')">Work Explanation</button></div>
+        <div class="items item2 page1 item-box" data-index="2" itemName="c_02" director="Kim Mi-kyung" alt="Harmony of Souls., Western Painting" style="left:25.08%; top:26.39%; width:6.29%; height:33.52%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 1, 'picture')">Work Explanation</button></div>
+        <div class="items item3 page1 item-box" data-index="3" itemName="c_03" director="Kim Jae-ho" alt="Flowing Cat., Western Painting" style="left:32.51%; top:22.04%; width:5.70%; height:42.41%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 2, 'picture')">Work Explanation</button></div>
+        <div class="items item4 page1 item-box" data-index="4" itemName="c_04" director="Park Hwan" alt="Ginkgo Tree., Western Painting" style="left:39.30%; top:26.48%; width:6.29%; height:33.43%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 3, 'picture')">Work Explanation</button></div>
+        <div class="items item5 page1 item-box" data-index="5" itemName="c_05" director="Seok Chang-woo" alt="Every Person Saved., Ink Croquis" style="left:46.69%; top:31.20%; width:11.11%; height:22.13%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 4, 'picture')">Work Explanation</button></div>
+        <div class="items item6 page1 item-box" data-index="6" itemName="c_06" director="Lee Jung-hee" alt="Golden Thread Crane, Couple Badge., Western Painting" style="left:58.89%; top:22.04%; width:5.69%; height:42.31%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 5, 'picture')">Work Explanation</button></div>
+        <div class="items item7 page1 item-box" data-index="7" itemName="c_07" director="Lim Kyung-sik" alt="Dreaming., Western Painting" style="left:65.76%; top:22.04%; width:4.59%; height:42.41%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 6, 'picture')">Work Explanation</button></div>
+        <div class="items item8 page1 item-box" data-index="8" itemName="c_08" director="Choi Ji-hyun" alt="Self-Portrait., Oriental Painting" style="left:71.44%; top:22.04%; width:4.97%; height:42.50%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 7, 'picture')">Work Explanation</button></div>
+        <div class="items item9 page1 item-box" data-index="9" itemName="c_09" director="Tak Yong-joon" alt="Love Rain., Western Painting" style="left:77.51%; top:26.48%; width:6.29%; height:33.52%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 8, 'picture')">Work Explanation</button></div>
+        <div class="items item10 page1 item-box" data-index="10" itemName="c_10" director="Han Bu-yeol" alt="Hide and Seek., Non-conceived" style="left:85.33%; top:29.72%; width:6.29%; height:27.04%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 9, 'picture')">Work Explanation</button></div>
+    </div>
+</div>
+</body>

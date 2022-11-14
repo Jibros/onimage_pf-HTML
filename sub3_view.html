@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/front/css/reset.css">
+<link rel="stylesheet" href="./assets/front/css/layout.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'ko';
+    const _CDN = '.';
+</script>
+<script src="./assets/front/js/common.js"></script>
+<script src="./assets/front/smart/js/smart.js"></script>
+
+<link rel="stylesheet" href="./assets/front/smart/css/smart.css">
+<script src="./assets/front/smart/js/libs/swipe.js"></script>
+<!-- <script src="./assets/front/smart/js/libs/scrollTo.min.js"></script> -->
+<script src="./assets/front/smart/js/libs/TweenMax.min.js"></script>
+
+</head>
+<body>
+
+
+<section class="sub-2">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- 로고 -->
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        <!-- //로고 -->
+    </header>
+    <!-- //HEADER -->
+
+	<!-- ASIDE -->
+	<aside id="aside" class="aside">
+        <!-- Sidebar -->
+		<nav class="sidebar">
+            <div class="inner">
+                <a href="/" class="toggle" data-toggle="aside">메인화면</a>
+
+                <ul class="nav">
+                    <li><a href="/" class="menu menu-1"><span><i></i>메인으로</span></a></li>
+                    <li><a href="./sub1.html" class="menu menu-2"><span><i></i>홍보관</span></a></li>
+                    <li><a href="./sub2.html" class="menu menu-3"><span><i></i>Youplay</span></a></li>
+                    <li class="on"><a href="./sub3.html" class="menu menu-4"><span><i></i>스마트전시관</span></a></li>
+                    <li><a href="./sub4.html" class="menu menu-5"><span><i></i>웹방</span></a></li>
+                    <li><a href="./sub5.html" class="menu menu-6"><span><i></i>E美지룸</span></a></li>
+                </ul>
+
+                <div class="language">
+                    <a href="#" class="on">KR</a>
+                    <a href="#">EN</a>
+                </div>
+
+                <div class="footer">
+                    <div class="company">
+                        <p>(사) 한국장애예술인협회 (대표 방귀희)</p>
+                        <p>www.onemiji.com</p>
+                        <p>(온이미지는 E美지 www.emiji.net과와 연동됩니다.<br>모든 문의사항 및 의견은 E美지의 연락처로 해주시기 바랍니다)</p>
+                    </div>
+
+                    <ul class="sponcer">
+                        <li><img src="./assets/front/images/menu/spon_1.png" alt="문화체육관광부"></li>
+                        <li><img src="./assets/front/images/menu/spon_2.png" alt="한국장애인문화예술원"></li>
+                    </ul>
+
+                    <p class="copy">Copyright C onimage. All Rights Reserved.</p>
+                </div>
+            </div>
+		</nav>
+		<!-- //Sidebar -->
+
+        <div class="dimmed"></div>
+	</aside>
+	<!-- //ASIDE -->
+</section>
+
+
+<div class="wrapper_horizontal" id="contents">
+    <!-- 목록보기   -->
+    <a href="#목록보기" class="btn_list">목록보기</a>
+
+    <div class="bg">
+        <img src="./assets/front/smart/images/bg_smart_view_1.png" />
+
+        <!-- 작가 사진 -->
+        <div class="director_pic" style="left:4.43%;top:31.76%; width:5.51%; height:27.96%">
+            <img src="./assets/front/smart/images/art/P_01.png" alt="강내균">
+        </div>
+
+        <!-- 작가 설명 -->
+        <div class="director_info" style="left:11.58%;top:31.76%; width:8.19%; height:46.11%;">
+            <p class="tx1">강내균</p>
+            <p class="tx2">한국화 / 남, 지체장애</p>
+            <p class="tx3">미술계에서는 강내균으로 알고 있지만 본명은 강호찬입니다. 화풍이 아주 독특한 동양화가이죠.<br>그는 2살 때 소아마비로 양하지에 장애를 갖게 되어 목발을 사용했었는데 요즘은 휠체어로 이동을 합니다.<br>강내균 작가는 미술학원을 20년 동안 운영하다가 요즘은 창작 활동에 전념하고 있습니다. </p>
+
+            <button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 2, 'director')">작가설명</button>
+        </div>
+
+        <!-- 작가 이력 -->
+        <div class="director_record" style="left:20.51%;top:0.00%; width:13.47%; height:100.00%;">
+            <div class="inner">
+                <p class="tx_tit">주요이력</p>
+                <ul>
+                    <li>- 동국대학교 예술대학 미술학과 졸업</li>
+                    <li>- 한국미술협회, 노원미술협회, 서울아카데미회, </li>
+                    <li>- 장애인미술협회 회원 </li>
+                    <li>- 2022 이원형어워드 수상</li>
+                    <li>- 2021 대한민국장애인미술대전 최우수상</li>
+                    <li>- 2021 전국장애인종합예술제 대상</li>
+                    <li>- 2020 JW 아트어워드 대상</li>
+                    <li>- 1990 불교미술대상 </li>
+                    <li>- 개인전/ 6회</li>
+                    <li>- 단체전/ 국내외 200여 회 등</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 작품 목록 -->
+        <div class="items item1 page2 item-box view-box" itemName="s_01_1" itemlength="1" director="강내균" alt="마을소회" style="left:38.71%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 0, 'picture')">작품설명</button></div>
+        <div class="items item2 page2 item-box view-box" itemName="s_01_2" itemlength="1" director="강내균" alt="노을(60x35cm)" style="left:49.62%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item3 page2 item-box view-box" itemName="s_01_3" itemlength="1" director="강내균" alt="빨간등대(혼합재료)62x50cm" style="left:60.72%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item4 page2 item-box view-box" itemName="s_01_4" itemlength="1" director="강내균" alt="쌍문동(혼합재료)50x40cm" style="left:71.78%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item5 page2 item-box view-box" itemName="s_01_5" itemlength="1" director="강내균" alt="일몰-(한지커피채색-)90x35cm" style="left:82.77%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div></div>
+
+    </div>
+</div>
+
+
+<!-- ========================== global =========================================== -->
+<div id="ytPop">
+    <div class="closeBtns"><img src="./assets/front/smart/images/close.png"/></div>
+    <div class="dimd"></div>
+    <div class="popup_wrapper">
+        <div id="ytContainer"></div>
+    </div>
+</div>
+<div id="slidePop">
+    <div class="closeBtns"><img src="./assets/front/smart/images/close.png"/></div>
+    <div class="dimd"></div>
+    <div class="popup_wrapper">
+        <div class="nav"></div>
+        <div class="alt"></div>
+        <div class="left arrow simpleBtns" id="popContentsLeft"></div>
+        <div class="right arrow simpleBtns" id="popContentsRigth"></div>
+        <div class='contents'></div>
+    </div>
+</div>
+<div id="loading">
+    <div class="dimd"></div>
+    <img src="https://goobneighbors.s3.ap-northeast-2.amazonaws.com/assets/voice/img/loading.gif" />
+</div>
+</body>

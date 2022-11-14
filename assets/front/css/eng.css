@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* ========================================================================
+	영문 대응
+========================================================================== */
+
+.clickarea > li .click_msg {
+    display: none;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    min-height:102px;
+    padding:9px 25px 9px 8px;
+    border-radius:90px;
+    background-color:#fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0, 0.16);
+    z-index: 15;
+}
+
+.clickarea > li.click1 .click_msg {top:-84px;}
+.clickarea > li.click1 .click_msg .tx_msg {width:320px;}
+
+.clickarea > li.click2 .click_msg {top:-92px;}
+.clickarea > li.click2 .click_msg .tx_msg {width:350px;}
+
+.clickarea > li.click3 .click_msg {top:-82px;}
+.clickarea > li.click3 .click_msg .tx_msg {width:280px;}
+
+.clickarea > li.click4 .click_msg {top:-84px;}
+.clickarea > li.click4 .click_msg .tx_msg {width:402px;}
+
+.clickarea > li.click5 .click_msg {top:-84px;}
+.clickarea > li.click5 .click_msg .tx_msg {width:215px;}
+
+/* SUB VIEW */
+.director_record {
+    padding-left:18vh;
+}
+.director_record .tx_tit {
+    margin-bottom: 2.6vh;
+}
+.director_record ul li {
+    line-height: 2.8vh;
+}
+
+/* SUB */
+.sub-1 #scroller .scritems .item {
+    flex-basis: 50rem;
+    padding-right:0;
+}
+.sub-3 #scroller .scritems .item {
+    flex-basis: 60rem;
+    padding-right:0;
+}
+#scroller .scritems .item.page_tit .tx_tit {
+    font-size: 4.8rem;
+}
+#scroller .scritems .item.page_tit .tx_info {
+    font-size: 2rem;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    /* 오디오 재생 */
+    .audiobox {
+        position:fixed;
+        bottom:50px; 
+        left:calc(50% + var(--aside-width)/2);
+        /* left: 50%; */
+        z-index: 1000;
+        width:760px;
+        height:123px;
+        margin-left:-380px;
+        padding: 7px 20px 7px 8px;
+        border-radius:20px;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.16);
+        background-color: #fff;
+    }
+    .sub-0 .audiobox {width:790px;margin-left:-395px}
+    .sub-1 .audiobox {width:744px;margin-left:-372px}
+    .sub-2 .audiobox {width:666px;margin-left:-333px}
+    .sub-3 .audiobox {width:890px;margin-left:-445px}
+    .sub-4 .audiobox {width:590px;margin-left:-295px}
+
+    .audiobox .audio_inner .audio_play .tx_msg {
+        font-size:20px;
+        line-height:28px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .audiobox .audio_inner .audio_play .tx_msg {
+        margin-right:0;
+        font-size:1.2rem;
+        line-height:2rem;
+        letter-spacing:-.28px;
+    }
+}
+@media (max-width:360px){
+    html {font-size:6px}
+}
+
+.item-box span p {
+    font-size: 1.8vh;
+}

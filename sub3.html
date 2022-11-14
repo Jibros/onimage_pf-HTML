@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/front/css/reset.css">
+<link rel="stylesheet" href="./assets/front/css/layout.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'ko';
+    const _CDN = '.';
+</script>
+<script src="./assets/front/js/common.js"></script>
+<script src="./assets/front/smart/js/smart.js"></script>
+
+<link rel="stylesheet" href="./assets/front/smart/css/smart.css">
+<script src="./assets/front/smart/js/libs/swipe.js"></script>
+<!-- <script src="./assets/front/smart/js/libs/scrollTo.min.js"></script> -->
+<script src="./assets/front/smart/js/libs/TweenMax.min.js"></script>
+
+</head>
+<body>
+
+
+<section class="sub-2">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- 로고 -->
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        <!-- //로고 -->
+    </header>
+    <!-- //HEADER -->
+
+	<!-- ASIDE -->
+	<aside id="aside" class="aside">
+        <!-- Sidebar -->
+		<nav class="sidebar">
+            <div class="inner">
+                <a href="/" class="toggle" data-toggle="aside">메인화면</a>
+
+                <ul class="nav">
+                    <li><a href="/" class="menu menu-1"><span><i></i>메인으로</span></a></li>
+                    <li><a href="./sub1.html" class="menu menu-2"><span><i></i>홍보관</span></a></li>
+                    <li><a href="./sub2.html" class="menu menu-3"><span><i></i>Youplay</span></a></li>
+                    <li class="on"><a href="./sub3.html" class="menu menu-4"><span><i></i>스마트전시관</span></a></li>
+                    <li><a href="./sub4.html" class="menu menu-5"><span><i></i>웹방</span></a></li>
+                    <li><a href="./sub5.html" class="menu menu-6"><span><i></i>E美지룸</span></a></li>
+                </ul>
+
+                <div class="language">
+                    <a href="#" class="on">KR</a>
+                    <a href="#">EN</a>
+                </div>
+
+                <div class="footer">
+                    <div class="company">
+                        <p>(사) 한국장애예술인협회 (대표 방귀희)</p>
+                        <p>www.onemiji.com</p>
+                        <p>(온이미지는 E美지 www.emiji.net과와 연동됩니다.<br>모든 문의사항 및 의견은 E美지의 연락처로 해주시기 바랍니다)</p>
+                    </div>
+
+                    <ul class="sponcer">
+                        <li><img src="./assets/front/images/menu/spon_1.png" alt="문화체육관광부"></li>
+                        <li><img src="./assets/front/images/menu/spon_2.png" alt="한국장애인문화예술원"></li>
+                    </ul>
+
+                    <p class="copy">Copyright C onimage. All Rights Reserved.</p>
+                </div>
+            </div>
+		</nav>
+		<!-- //Sidebar -->
+
+        <div class="dimmed"></div>
+	</aside>
+	<!-- //ASIDE -->
+
+    <!-- 하단 : 오디오 재생 -->
+    <div class="audiobox">
+        <div class="audio_inner">
+            <div class="audio_ico"><img src="./assets/front/images/ico/audio_icon.png" alt="" /></div>
+
+            <div class="audio_play">
+                <p class="tx_msg">여기는요, 상설전시관인데요,<br class="hidden-pc"> 그림이 말도 하고 아주아주 신기해요.<br>그래서 배리어프리예요.</p>
+
+                <!-- /assets/js/scrollFunc.js : param 0~4-->
+                <button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 2, 'subpage')">듣기</button>
+            </div>
+        </div>
+    </div>
+    <!-- //하단 : 오디오 재생 -->
+</section>
+
+
+<div class="wrapper_horizontal" id="contents">
+    <div class="bg">
+        <img src="./assets/front/smart/images/bg_smart_ko.png"/>
+
+        <div class="items item1 page1 item-box" data-index="1" itemName="c_01" director="강내균" alt="마을소회 한국화, 지체장애" style="left:17.69%; top:29.35%; width:6.29%; height:27.59%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 0, 'picture')">작품설명</button></div>
+        <div class="items item2 page1 item-box" data-index="2" itemName="c_02" director="김미경" alt="영혼의 조화 서양화, 지체장애" style="left:25.08%; top:26.39%; width:6.29%; height:33.52%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 1, 'picture')">작품설명</button></div>
+        <div class="items item3 page1 item-box" data-index="3" itemName="c_03" director="김재호" alt="흐르는 고양이 서양화, 뇌병변장애" style="left:32.51%; top:22.04%; width:5.70%; height:42.41%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 2, 'picture')">작품설명</button></div>
+        <div class="items item4 page1 item-box" data-index="4" itemName="c_04" director="박환" alt="은행나무 서양화, 시각장애" style="left:39.30%; top:26.48%; width:6.29%; height:33.43%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 3, 'picture')">작품설명</button></div>
+        <div class="items item5 page1 item-box" data-index="5" itemName="c_05" director="석창우" alt="구하는 자마다 수묵크로키, 지체장애" style="left:46.69%; top:31.20%; width:11.11%; height:22.13%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 4, 'picture')">작품설명</button></div>
+        <div class="items item6 page1 item-box" data-index="6" itemName="c_06" director="이정희" alt="금사 쌍학 흉배 서양화, 시각장애" style="left:58.89%; top:22.04%; width:5.69%; height:42.31%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 5, 'picture')">작품설명</button></div>
+        <div class="items item7 page1 item-box" data-index="7" itemName="c_07" director="임경식" alt="꿈을 꾸다 서양화, 지체장애" style="left:65.76%; top:22.04%; width:4.59%; height:42.41%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 6, 'picture')">작품설명</button></div>
+        <div class="items item8 page1 item-box" data-index="8" itemName="c_08" director="최지현" alt="자화상 동양화, 지체장애" style="left:71.44%; top:22.04%; width:4.97%; height:42.50%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 7, 'picture')">작품설명</button></div>
+        <div class="items item9 page1 item-box" data-index="9" itemName="c_09" director="탁용준" alt="사랑비 서양화, 지체장애" style="left:77.51%; top:26.48%; width:6.29%; height:33.52%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 8, 'picture')">작품설명</button></div>
+        <div class="items item10 page1 item-box" data-index="10" itemName="c_10" director="한부열" alt="꿈을 꾸다 비구상화, 지체장애" style="left:85.33%; top:29.72%; width:6.29%; height:27.04%;"><div class="icon-img"><img src="./assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'ko', 9, 'picture')">작품설명</button></div>
+    </div>
+</div>
+</body>

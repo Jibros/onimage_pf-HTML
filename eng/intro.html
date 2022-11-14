@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/front/css/reset.css">
+<link rel="stylesheet" href="../assets/front/css/layout.css">
+<link rel="stylesheet" href="../assets/front/css/main.css">
+<!-- CSS : Video.js -->
+<link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'en';
+    const _CDN = '.';
+</script>
+<script src="../assets/front/js/common.js"></script>
+
+<!-- 영문 진입시, css 호출 (위치:head 태그 하단 또는 body 끝) -->
+<link rel="stylesheet" href="../assets/front/css/eng.css">
+
+</head>
+
+<body>
+
+<!-- WRAPPER -->
+<section class="intro">
+    <div class="inner">
+        <p class="tx_msg">Hello!<br>On-Emiji is a new ontact space for disabled art<br>It’s a disabled art platform</p>
+
+        <button type="button" class="btn_vod">To enter</button>
+    </div>
+</section>
+<!-- //WRAPPER -->
+
+<!-- 레이어 : 영상 재생 -->
+<div class="layer_vod">
+    <div class="vod_inner">
+        <!-- 로고 -->
+        <!--
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        -->
+        <!-- //로고 -->
+
+        <video id="myVideo" style="object-fit:cover;" class="video-js vjs-default-skin vjs-big-play-centered"></video>
+
+        <a href="../" class="btn_skip">안내영상 건너 뛰기</a>
+    </div>
+</div>
+<!-- //레이어 : 영상 재생 -->
+
+<!-- JS : Video.js -->
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+<script>
+    // 기기 체크
+    function isMobile(){
+        var UserAgent = navigator.userAgent;
+        if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    $(".btn_vod").on("click", function(){
+        $(".layer_vod").addClass("is-shown")
+
+        let vodOptions = {
+            controls: false,
+            preload: "auto",
+            playsinline: true,
+            preferFullWindow: true,
+            controlBar: {
+                playToggle: true,
+                pictureInPictureToggle: false,
+                remainingTimeDisplay: true,
+                progressControl: true,
+                qualitySelector: true,
+            }
+        };
+
+        var myPlayer = videojs('myVideo', vodOptions);
+
+        if(!isMobile()){
+            myPlayer.src([
+                {
+                    src: './assets/front/videos/pc_full.mp4',
+                    type: 'video/mp4',
+                },
+                {
+                    src: './assets/front/videos/pc_full.webm',
+                    type: 'video/webm',
+                },
+            ]);
+        }else{
+            myPlayer.src([
+                {
+                    src: './assets/front/videos/m_full.mp4',
+                    type: 'video/mp4',
+                },
+                {
+                    src: './assets/front/videos/m_full.webm',
+                    type: 'video/webm',
+                },
+            ]);
+        }
+
+        myPlayer.play();
+    })
+</script>
+</body>
+</html>

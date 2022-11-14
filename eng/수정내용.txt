@@ -1,0 +1,23 @@
+eng 폴더 추가해서 html 수정했습니다.
+
+---------------------------------------------------------------------
+
+html 수정위치
+
+1. 영문 진입시 <head>또는<body>하단에 css추가해주세요. (전 페이지 공통)
+
+<!-- 영문 진입시, css 호출 (위치:head 태그 하단 또는 body 끝) -->
+<link rel="stylesheet" href="../assets/front/css/eng.css">
+
+2. 서브 목록 오디오 박스
+오디오 텍스트 br태그 위치 일부 변경되었어요. 
+
+3. 스마트전시관 타이틀
+타이틀 부분은 BG에 포함이라 전체이미지 경로를 변경해주세요.
+<img src="../assets/front/smart/images/bg_smart.png"/>
+bg_smart.png -> bg_smart_eng.png
+
+4. 스마트전시관 상세
+작가설명 너비 변경 width:8.19% -> 10%
+작가이력 탑 변경  top:0.00% -> 6%
+

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/front/css/reset.css">
+<link rel="stylesheet" href="../assets/front/css/layout.css">
+<link rel="stylesheet" href="../assets/front/css/sub.css">
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'en';
+    const _CDN = '.';
+</script>
+<script src="../assets/front/js/common.js"></script>
+
+<!-- JS : icsroll (horizontal) -->
+<script type="text/javascript" src="../assets/front/js/iscroll-probe.js"></script>
+<script src="../assets/front/js/scrollFunc.js"></script>
+
+<!-- 영문 진입시, css 호출 (위치:head 태그 하단 또는 body 끝) -->
+<link rel="stylesheet" href="../assets/front/css/eng.css">
+
+</head>
+<body>
+
+<!-- 아이스크롤 loadData 모션 참고 -->
+<p id="moreMsg" style="position:fixed;bottom:50px;left:150px;font-size:20px;color:#000">test</p>
+
+
+<!-- WRAPPER -->
+<!--
+    서브 페이지 클래스 별도 적용(BG 변경)
+    sub0~4.html wrapper 클래스 : sub-0~4, 2제외 (스마트전시관)
+    view.html wrapper 클래스 : view
+-->
+<section class="wrapper sub-4">
+
+    <!-- HEADER -->
+    <header class="header">
+        <!-- 로고 -->
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        <!-- //로고 -->
+    </header>
+    <!-- //HEADER -->
+
+	<!-- ASIDE -->
+	<aside id="aside" class="aside">
+        <!-- Sidebar -->
+		<nav class="sidebar">
+            <div class="inner">
+                <a href="/" class="toggle" data-toggle="aside">Main</a>
+
+                <ul class="nav">
+                    <li><a href="/" class="menu menu-1"><span><i></i>Main</span></a></li>
+                    <li><a href="../sub1.html" class="menu menu-2"><span><i></i>Promotion</span></a></li>
+                    <li><a href="../sub2.html" class="menu menu-3"><span><i></i>Youplay</span></a></li>
+                    <li><a href="../sub3.html" class="menu menu-4"><span><i></i>Smart Exhibition</span></a></li>
+                    <li><a href="../sub4.html" class="menu menu-5"><span><i></i>Web Room</span></a></li>
+                    <li class="on"><a href="../sub5.html" class="menu menu-6"><span><i></i>Emiji Room</span></a></li>
+                </ul>
+
+                <div class="language">
+                    <a href="#" class="on">KR</a>
+                    <a href="#">EN</a>
+                </div>
+
+                <div class="footer">
+                    <div class="company">
+                        <p>Korea Disabled Artist Association (CEO Bang Guihee)</p>
+                        <p>www.emiji.net / tel.02)861-8848</p>
+                        <!-- <p>(온이미지는 E美지 www.emiji.net과와 연동됩니다.<br>모든 문의사항 및 의견은 E美지의 연락처로 해주시기 바랍니다)</p> -->
+                    </div>
+
+                    <ul class="sponcer">
+                        <li><img src="../assets/front/images/menu/spon_1.png" alt="문화체육관광부"></li>
+                        <li><img src="../assets/front/images/menu/spon_2.png" alt="한국장애인문화예술원"></li>
+                    </ul>
+
+                    <p class="copy">Copyright C onimage. All Rights Reserved.</p>
+                </div>
+            </div>
+		</nav>
+		<!-- //Sidebar -->
+
+        <div class="dimmed"></div>
+	</aside>
+	<!-- //ASIDE -->
+
+	<!-- SECTION -->
+	<section class="container">
+
+        <!-- Contents -->
+        <div class="contents">
+
+            <!-- 중단 : 리스트 가로 스크롤 -->
+            <div class="list_wrap">
+
+                <!-- 스크롤 영역 -->
+                <div id="scrWrapper">
+                    <div id="scroller">
+                        <div class="scritems">
+                            <div class="item page_tit">
+                                <div class="item_inner">
+                                    <h1 class="tx_tit">Emiji Room</h1>
+                                    <p class="tx_info">Online E-Magazine to enjoy<br>the paper magazine Emiji</p>
+
+                                    <i class="ico_arrow"><!--오른쪽으로--></i>
+                                </div>
+                            </div>
+                            <div class="item poster">
+                                <div class="item_inner">
+                                    <a href="#" class="item_link">
+                                        <img src="../assets/front/images/이미지룸_1.jpg" alt="">
+
+                                        <div class="poster_info">
+                                            <span class="tit">E美지 25호 문학</span>
+                                            <span class="sub">자음 한 자 모음 한 자를 찍는 소설가 이서진</span>
+                                        </div>
+
+                                        <span class="ico_detail">자세히보기</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item poster">
+
+                                <div class="item_inner">
+                                    <a href="#" class="item_link">
+                                        <img src="../assets/front/images/이미지룸_2.jpg" alt="">
+
+                                        <div class="poster_info">
+                                            <span class="tit">E美지 25호 문학</span>
+                                            <span class="sub">자음 한 자 모음 한 자를 찍는 소설가 이서진</span>
+                                        </div>
+
+                                        <span class="ico_detail">자세히보기</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item poster">
+
+                                <div class="item_inner">
+                                    <a href="#" class="item_link">
+                                        <img src="../assets/front/images/이미지룸_3.jpg" alt="">
+
+                                        <div class="poster_info">
+                                            <span class="tit">E美지 25호 문학</span>
+                                            <span class="sub">자음 한 자 모음 한 자를 찍는 소설가 이서진</span>
+                                        </div>
+
+                                        <span class="ico_detail">자세히보기</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="item poster">
+
+                                <div class="item_inner">
+                                    <a href="#" class="item_link">
+                                        <img src="../assets/front/images/이미지룸_1.jpg" alt="">
+
+                                        <div class="poster_info">
+                                            <span class="tit">E美지 25호 문학</span>
+                                            <span class="sub">자음 한 자 모음 한 자를 찍는 소설가 이서진</span>
+                                        </div>
+
+                                        <span class="ico_detail">자세히보기</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //중단 : 리스트 가로 스크롤 -->
+
+            <!-- 하단 : 오디오 재생 -->
+            <div class="audiobox">
+                <div class="audio_inner">
+                    <div class="audio_ico"><img src="../assets/front/images/ico/audio_icon.png" alt="" /></div>
+
+                    <div class="audio_play">
+                        <p class="tx_msg">Paper magazine Emji<br>will be updated to be seen online</p>
+
+                        <!-- /assets/js/scrollFunc.js : param 0~4-->
+                        <button type="button" class="btn_play" onclick="audioHandle(this, 'en', 4, 'subpage')">듣기</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //하단 : 오디오 재생 -->
+
+        </div>
+        <!-- //Contents -->
+
+
+	</section>
+	<!-- //SECTION -->
+
+</section>
+<!-- //WRAPPER -->
+</body>
+</html>

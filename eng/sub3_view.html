@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>온이미지</title>
+<!-- CSS -->
+<link rel="stylesheet" href="../assets/front/css/reset.css">
+<link rel="stylesheet" href="../assets/front/css/layout.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<!-- JS -->
+<script>
+    const _LOCALE = 'en';
+    const _CDN = '.';
+</script>
+<script src="../assets/front/js/common.js"></script>
+<script src="../assets/front/smart/js/smart.js"></script>
+
+<link rel="stylesheet" href="../assets/front/smart/css/smart.css">
+<script src="../assets/front/smart/js/libs/swipe.js"></script>
+<!-- <script src="../assets/front/smart/js/libs/scrollTo.min.js"></script> -->
+<script src="../assets/front/smart/js/libs/TweenMax.min.js"></script>
+
+<!-- 영문 진입시, css 호출 (위치:head 태그 하단 또는 body 끝) -->
+<link rel="stylesheet" href="../assets/front/css/eng.css">
+
+</head>
+<body>
+
+
+<section class="sub-2">
+    <!-- HEADER -->
+    <header class="header">
+        <!-- 로고 -->
+        <div class="brand-logo">
+            <a href="/">온이미지</a>
+        </div>
+        <!-- //로고 -->
+    </header>
+    <!-- //HEADER -->
+
+	<!-- ASIDE -->
+	<aside id="aside" class="aside">
+        <!-- Sidebar -->
+		<nav class="sidebar">
+            <div class="inner">
+                <a href="/" class="toggle" data-toggle="aside">Main</a>
+
+                <ul class="nav">
+                    <li><a href="/" class="menu menu-1"><span><i></i>Main</span></a></li>
+                    <li><a href="../sub1.html" class="menu menu-2"><span><i></i>Promotion</span></a></li>
+                    <li><a href="../sub2.html" class="menu menu-3"><span><i></i>Youplay</span></a></li>
+                    <li class="on"><a href="../sub3.html" class="menu menu-4"><span><i></i>Smart Exhibition</span></a></li>
+                    <li><a href="../sub4.html" class="menu menu-5"><span><i></i>Web Room</span></a></li>
+                    <li><a href="../sub5.html" class="menu menu-6"><span><i></i>Emiji Room</span></a></li>
+                </ul>
+
+                <div class="language">
+                    <a href="#" class="on">KR</a>
+                    <a href="#">EN</a>
+                </div>
+
+                <div class="footer">
+                    <div class="company">
+                        <p>Korea Disabled Artist Association (CEO Bang Guihee)</p>
+                        <p>www.emiji.net / tel.02)861-8848</p>
+                        <!-- <p>(온이미지는 E美지 www.emiji.net과와 연동됩니다.<br>모든 문의사항 및 의견은 E美지의 연락처로 해주시기 바랍니다)</p> -->
+                    </div>
+
+                    <ul class="sponcer">
+                        <li><img src="../assets/front/images/menu/spon_1.png" alt="문화체육관광부"></li>
+                        <li><img src="../assets/front/images/menu/spon_2.png" alt="한국장애인문화예술원"></li>
+                    </ul>
+
+                    <p class="copy">Copyright C onimage. All Rights Reserved.</p>
+                </div>
+            </div>
+		</nav>
+		<!-- //Sidebar -->
+
+        <div class="dimmed"></div>
+	</aside>
+	<!-- //ASIDE -->
+</section>
+
+
+<div class="wrapper_horizontal" id="contents">
+    <!-- 목록보기   -->
+    <a href="#목록보기" class="btn_list">View List</a>
+
+    <div class="bg">
+        <img src="../assets/front/smart/images/bg_smart_view_1.png" />
+
+        <!-- 작가 사진 -->
+        <div class="director_pic" style="left:4.43%;top:31.76%; width:5.51%; height:27.96%">
+            <img src="../assets/front/smart/images/art/P_01.png" alt="강내균">
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------
+            수정 : 작가 설명 width: 10%
+         ------------------------------------------------------------------------------------------------------------------>
+        <!-- 작가 설명 -->
+        <div class="director_info" style="left:11.58%;top:31.76%; width:10%; height:46.11%;">
+            <p class="tx1">Park Hwan</p>
+            <p class="tx2">Western Painting<br>Male, Visual Impairment</p>
+            <p class="tx3">Park Hwan started his artwork right after completing his military service, and submitted his work to the Korean Art Exhibition and won his first prize.<br>
+                3 weeks after finishing the Korea International Art Fair 2013, he came across a car accident. Being recognized as a unique painter, he had to face his fatal fate as a painter in his prime days. Total blindness that does not respond to light at all, he thought he could not draw again, but took the composition in his head, and started to cut and past threads rather than draw with pencils on the canvas.<br>
+                He painted with his fingers, not with his brush to create colors. Acquaintances who saw his paintings introduced him to several galleries, but he did not show interest, however, one day a call from Gallery Coop changed his mind, and opened his first exhibition in 2017.<br>
+                Although artist Park Hwan has lost his sight, he shows his strong will to work as a painter. </p>
+
+            <button type="button" class="btn_play" onclick="audioHandle(this, 'en', 2, 'director')">Artist Introduction</button>
+        </div>
+
+        <!------------------------------------------------------------------------------------------------------------------
+            수정 : 작가 이력 top: 6%
+         ------------------------------------------------------------------------------------------------------------------>
+        <!-- 작가 이력 -->
+        <div class="director_record" style="left:20.51%;top:6%; width:13.47%; height:100.00%;">
+            <div class="inner">
+                <p class="tx_tit">Career</p>
+                <ul>
+                    <li>- Graduated from Myongji University in Electrical Engineering</li>
+                    <li>- First Writer of the Korea Calligraphy Exhibition</li>
+                    <li>- Individual Exhibition / Local & Overseas 46 Times </li>
+                    <li>- Group Exhibition / 2022 Korean Cultural Center in the United States</li>
+                    <li>“K-ART in DC” 270 episodes (38th International Invitation Exhibition including 8th Zurich Art Fair)</li>
+                    <li>- Performance / 2014 Sochi Winter Paralympics closing ceremony performance,</li>
+                    <li>- The closing ceremony of the 2018 Pyeongchang Paralympics Seonghwasoojeon Performance,</li>
+                    <li>- 2022 SSG Landers Stadium Kim Kwang-hyun’s pitching form, etc</li>
+                    <li>- 200 times (47 times overseas)</li>
+                    <li>- Posted in 11 textbooks, including 6 types of textbooks / middle school and 3 types of high school</li>
+                    <li>- Other / SK Broadband CF appearance (artificial intelligence TV daily life advertisement model)</li>
+                    <li>- Transcription completed with Christian Bible, Catholic Bible brushstrokes (Korea’s highest record in 2017)</li>
+                    <li>- 2018 SEOK CHANG WOO font development</li>
+                    <li>- 2019 Korean Intellectual Property Office registered Seokchang Post Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 작품 목록 -->
+        <div class="items item1 page2 item-box view-box" itemName="s_01_1" itemlength="1" director="강내균" alt="마을소회" style="left:38.71%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div><button type="button" class="btn_play" onclick="audioHandle(this, 'en', 0, 'picture')">Work Explanation</button></div>
+        <div class="items item2 page2 item-box view-box" itemName="s_01_2" itemlength="1" director="강내균" alt="노을(60x35cm)" style="left:49.62%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item3 page2 item-box view-box" itemName="s_01_3" itemlength="1" director="강내균" alt="빨간등대(혼합재료)62x50cm" style="left:60.72%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item4 page2 item-box view-box" itemName="s_01_4" itemlength="1" director="강내균" alt="쌍문동(혼합재료)50x40cm" style="left:71.78%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div></div>
+        <div class="items item5 page2 item-box view-box" itemName="s_01_5" itemlength="1" director="강내균" alt="일몰-(한지커피채색-)90x35cm" style="left:82.77%; top:27.31%; width:8.96%; height:42.59%;"><div class="icon-img"><img src="../assets/front/smart/images/more-icon.png" /></div></div>
+
+    </div>
+</div>
+
+
+<!-- ========================== global =========================================== -->
+<div id="ytPop">
+    <div class="closeBtns"><img src="../assets/front/smart/images/close.png"/></div>
+    <div class="dimd"></div>
+    <div class="popup_wrapper">
+        <div id="ytContainer"></div>
+    </div>
+</div>
+<div id="slidePop">
+    <div class="closeBtns"><img src="../assets/front/smart/images/close.png"/></div>
+    <div class="dimd"></div>
+    <div class="popup_wrapper">
+        <div class="nav"></div>
+        <div class="alt"></div>
+        <div class="left arrow simpleBtns" id="popContentsLeft"></div>
+        <div class="right arrow simpleBtns" id="popContentsRigth"></div>
+        <div class='contents'></div>
+    </div>
+</div>
+<div id="loading">
+    <div class="dimd"></div>
+    <img src="https://goobneighbors.s3.ap-northeast-2.amazonaws.com/assets/voice/img/loading.gif" />
+</div>
+</body>
